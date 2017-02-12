@@ -1,0 +1,173 @@
+<!DOCTYPE html><html><head><title>Study Notes for 70-484 Exam: Essentials of Developing Windows Metro style Apps using C# | Giorgio Lasala Blog</title><meta charset="utf-8" /><meta http-equiv="content-type" content="text/html; charset=utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><meta name="description" content="Giorgio Lasala Blog" /><meta name="keywords" content="Giorgio" /><meta name="author" content="Giorgio Lasala" /><meta name="generator" content="DocPad v6.78.6" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="google-site-verification" content="7qBn2ADQE0AjoYPTvti8tvHvCjvmpn-G4A0Asm7jnMs" /><link rel="shortcut icon" href="/ico/favicon.ico" /><!--[if lt IE 9]><script async="async" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]--><link  rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" /><link  rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700" /><link  rel="stylesheet" href="http://fonts.googleapis.com/css?family=Niconne" /><link  rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/vs.min.css" /><link  rel="stylesheet" href="/css/jquery.cssemoticons.css" /><link  rel="stylesheet" href="/css/font-awesome.min.css" /><link  rel="stylesheet" href="/css/style.css" /><meta property="og:locale" content="it_IT" /><meta property="og:type" content="article" /><meta property="og:title" content="Study Notes for 70-484 Exam: Essentials of Developing Windows Metro style Apps using C#" /><meta property="og:description" content="Giorgio Lasala Blog" /><meta property="og:url" content="http://www.giorgiolasala.it/2012/08/study-notes-for-70-484-exam-xaml/" /><meta property="og:site_name" content="Giorgio Lasala Blog" /><meta property="og:image" content="" /><meta property="article:author" content="Giorgio Lasala" /><meta property="article:publisher" content="Giorgio Lasala" /><meta property="article:tag" content="certificazioni,General Topics,Programmazione" /><script type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-37168832-1', 'auto');
+  ga('send', 'pageview');
+
+</script></head><body><div id="bodyWrapper"><div><header id="siteHeader" class="img-responsive" style="background-image: url(/images/template/dynamo.jpg);"><div><div class="navbar navbar-default navbar-fixed-top navbar-inverse"><ul id="color-bars"><li id="color-1"></li><li id="color-2"></li><li id="color-3"></li><li id="color-4"></li><li id="color-5"></li><li id="color-6"></li></ul><div class="container"><div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="/">Home</a></div><div class="collapse navbar-collapse"><ul class="nav navbar-nav"><li typeof="sioc:Page" about="/pages/all-posts/"><a href="/pages/all-posts/" property="dc:title">Archivio</a></li><li typeof="sioc:Page" about="/pages/all-tags/"><a href="/pages/all-tags/" property="dc:title">Tags</a></li><li typeof="sioc:Page" about="/pages/tools/"><a href="/pages/tools/" property="dc:title">Tools</a></li><li typeof="sioc:Page" about="/pages/about-me/"><a href="/pages/about-me/" property="dc:title">Chi sono</a></li></ul></div></div></div></div><div class="jumbotron"><div class="container"><h1>Giorgio Lasala Blog</h1><span class="headerArrow"></span></div></div></header></div><div id="contentBody" class="container" role="main"><article id="post" class="post"><div id="post-head"><div class="title-container"><h1>Study Notes for 70-484 Exam: Essentials of Developing Windows Metro style Apps using C#</h1></div><div class="date text-muted text-right">21 agosto 2012</div></div><div class="clear"></div><div id="tags"><div class="tag_item"><a href="/tags/certificazioni">certificazioni</a></div><div class="tag_item"><a href="/tags/general-topics">General Topics</a></div><div class="tag_item"><a href="/tags/programmazione">Programmazione</a></div></div><div><p><span style="color: black; font-size: 14pt; font-style: italic; font-weight: bold; line-height: 1.7em;">Design Metro style Apps (19%)</span></p>
+<p>Design the UI layout and structure.</p>
+<p>This objective may include but is not limited to: evaluate the conceptual design and decide how the UI will be composed; design for the inheritance and re-use of visual elements (e.g., styles, resources); design for accessibility; decide when custom controls are needed</p>
+<p><a href="http://msdn.microsoft.com/en-us/library/windows/apps/hh770552.aspx">MSDN: Design guidance for Metro style apps</a></p>
+<p>Design for separation of concerns.</p>
+<p>This objective may include but is not limited to: plan the logical layers of your solution to meet application requirements; design loosely coupled layers; incorporate WinMD components</p>
+<p><span style="color: black; font-size: 11pt; font-style: italic; line-height: 1.7em;">Apply the MVVM pattern to your app design.</span></p>
+<p>This objective may include but is not limited to: design and implement the appropriate data model to support business entities; design your viewmodel to support your view based on your model; develop a view to meet data-binding requirements; create view models using INotifyPropertyChanged, ObservableCollection, and CollectionViewSource</p>
+<p>Design and implement Process Lifetime Management (PLM).</p>
+<p>This objective may include but is not limited to: choose a state management strategy; handle the suspend event; prepare for app termination; handle the Resume event; handle the OnActivated event; check the ActivationKind and previous state</p>
+<p><a href="http://msdn.microsoft.com/en-US/library/windows/apps/hh464925">MSDN: Application lifecycle</a></p>
+<p><a href="http://msdn.microsoft.com/en-US/library/windows/apps/xaml/Hh770837">MSDN: Launching resuming and multitasking</a></p>
+<p><a href="http://msdn.microsoft.com/en-us/library/windows/apps/xaml/Hh465093.aspx">MSDN: How to activate an app</a></p>
+<!-- more -->
+<p><a href="http://msdn.microsoft.com/en-us/library/windows/apps/xaml/Hh465115.aspx">MSDN: How to suspend an app</a></p>
+<p><a href="http://msdn.microsoft.com/en-us/library/windows/apps/xaml/hh465110.aspx">MSDN: How to resume an app</a></p>
+<p><a href="http://msdn.microsoft.com/en-US/library/windows/apps/hh465088">MSDN: Guidelines for app suspend and resume</a></p>
+<p>&nbsp;</p>
+<p>Plan for an application deployment.</p>
+<p>This objective may include but is not limited to: plan a deployment based on Windows 8 Application certification requirements; prepare an app manifest (capabilities and declarations); sign an app; plan the requirements for an enterprise deployment</p>
+<p><a href="http://msdn.microsoft.com/en-us/library/hh446593.aspx">MSDN: Packaging, deployment, and query of Metro style apps</a></p>
+<p><a href="http://msdn.microsoft.com/en-us/library/hh464929.aspx">MSDN: App packages and deployment (Metro style apps)</a></p>
+<p><a href="http://msdn.microsoft.com/en-US/library/windows/apps/hh454036">MSDN: Packaging your app using Visual Studio 2012</a></p>
+<p><a href="http://msdn.microsoft.com/en-us/library/windows/apps/br230835.aspx">MSDN: Submitting your app</a></p>
+<p><a href="http://msdn.microsoft.com/en-us/library/windows/apps/hh694062.aspx">MSDN: App submission checklist</a></p>
+<p><a href="http://msdn.microsoft.com/en-us/library/windows/apps/hh694081.aspx">MSDN: How to test your app with the Windows App Certification Kit</a></p>
+<p><a href="http://msdn.microsoft.com/en-us/library/windows/apps/hh446767.aspx">MSDN: App packager (MakeAppx.exe)</a></p>
+<p><a href="http://msdn.microsoft.com/en-us/library/windows/apps/br230259(v=vs.110">MSDN: Manifest Designer</a>.aspx)</p>
+<p><a href="http://msdn.microsoft.com/en-us/library/windows/apps/br230260(v=vs.110">MSDN: Signing a package</a>.aspx)</p>
+<p><a href="http://msdn.microsoft.com/en-us/library/windows/apps/hh975356(v=vs.110">MSDN: Sharing an app package locally</a>.aspx)</p>
+<p><a href="http://msdn.microsoft.com/en-us/library/windows/apps/hh694075.aspx">MSDN: Building the app package</a></p>
+<p>&nbsp;</p>
+<p>Develop Metro style Apps by Using WinRT (19%)</p>
+<p>Access and display contacts.</p>
+<p>This objective may include but is not limited to: call the ContactsPicker class; filter which contacts to display; display a set number of contacts; create and modify contact information; select specific contact data</p>
+<p><a href="http://msdn.microsoft.com/en-us/library/windows/apps/windows.applicationmodel.contacts.aspx">MSDN: Windows.ApplicationModel.Contacts namespace</a></p>
+<p><a href="http://msdn.microsoft.com/en-us/library/windows/apps/windows.applicationmodel.contacts.contactpicker.aspx">MSDN: ContactPicker class</a></p>
+<p><a href="http://msdn.microsoft.com/en-us/library/windows/apps/xaml/JJ152724(v=win.10">MSDN Quickstart: Selecting user contacts</a>.aspx)</p>
+<p>Design for charms and contracts.</p>
+<p>This objective may include but is not limited to: choose the appropriate charm based on app requirements; design your app in a charm- and contract-aware manner; configure app manifest for correct permissions</p>
+<p><a href="http://msdn.microsoft.com/en-us/library/windows/apps/hh464906.aspx">MSDN: App contracts and extensions</a></p>
+<p>Implement search.</p>
+<p>This objective may include but is not limited to: provide search suggestions using the SearchPane class; search for and launch other apps; provide and constrain search within an app, including inside and outside of Search charm; provide search result previews; implement activation from within search</p>
+<p><a href="http://msdn.microsoft.com/en-US/library/windows/apps/xaml/JJ130767(v=win.10">MSDN: Adding search to an app</a>)</p>
+<p><a href="http://msdn.microsoft.com/en-US/library/windows/apps/xaml/Hh868180(v=win.10">MSDN Quickstart: Adding search to an app</a>)</p>
+<p><a href="http://msdn.microsoft.com/en-us/library/windows/apps/hh465233.aspx">MSDN: Guidelines and checklist for search</a></p>
+<p><a href="http://msdn.microsoft.com/en-us/library/windows/apps/xaml/windows.applicationmodel.search.searchpane">MSDN: SearchPane class</a></p>
+<p><a href="http://www.guruumeditation.net/blog/charm-up-your-metro-app-part-ii">Olivier Matis blog: Charm up your Metro app</a></p>
+<p><a href="http://www.sormh.com/how-to-implement-search-in-windows-8-metro-style-app">Soroush&#39;s Blog: How to implement search in a windows 8 metro style app</a></p>
+<p>Implement Share in an app.</p>
+<p>This objective may include but is not limited to: use the DataTransferManager class to share data with other apps; accept sharing requests by implementing activation from within Share; limit the scope of sharing using the DataPackage object; implement in-app Share outside of Share charm</p>
+<p><a href="http://msdn.microsoft.com/en-us/library/windows/apps/xaml/hh871363.aspx">MSDN: Adding Share</a></p>
+<p><a href="http://msdn.microsoft.com/en-us/library/windows/apps/xaml/hh871374.aspx">MSDN: Sharing content</a></p>
+<p><a href="http://msdn.microsoft.com/en-us/library/windows/apps/xaml/hh871369.aspx">MSDN: Receiving shared content</a></p>
+<p><a href="http://msdn.microsoft.com/en-US/library/windows/apps/xaml/Hh871373(v=win.10">MSDN: Sharing and exchanging data</a>)</p>
+<p><a href="http://msdn.microsoft.com/en-us/library/windows/apps/xaml/hh871364.aspx">MSDN: Choosing data formats for sharing</a></p>
+<p><a href="http://msdn.microsoft.com/en-US/library/windows/apps/hh465251">MSDN: Guidelines for sharing content</a></p>
+<p><a href="http://msdn.microsoft.com/en-us/library/windows/apps/xaml/hh871375.aspx">MSDN: How to support pull operations</a></p>
+<p><a href="http://msdn.microsoft.com/en-us/library/windows/apps/xaml/hh871365.aspx">MSDN: How to make asynchronous calls in your DataRequested handler</a></p>
+<p><a href="http://www.guruumeditation.net/blog/charm-up-your-metro-app-part-iii">Olivier Matis blog: Charm up your Metro app</a></p>
+<p><a href="http://www.jonathanantoine.com/2011/09/18/windows-8-the-sharing-contract/">Jonath Anantoine&#39; Blog: Windows 8 - the sharing contract</a></p>
+<p>Manage app settings and preferences.</p>
+<p>This objective may include but is not limited to: choose which app features are accessed in AppSettings; add entry points for AppSettings in the Settings window; create settings flyouts using the Popup control; add settings to Popup; store and retrieve settings from the roaming app data store</p>
+<p><a href="http://msdn.microsoft.com/en-US/library/windows/apps/hh464917">MSDN: Accessing app data with the Windows Runtime</a></p>
+<p><a href="http://msdn.microsoft.com/en-US/library/windows/apps/xaml/Hh465099(v=win.10">MSDN: Managing application data</a>)</p>
+<p><a href="http://msdn.microsoft.com/en-US/library/windows/apps/xaml/hh700361">MSDN Quickstart: Local application data</a></p>
+<p><a href="http://msdn.microsoft.com/en-US/library/windows/apps/xaml/hh700362">MSDN Quickstart: Roaming application data</a></p>
+<p><a href="http://msdn.microsoft.com/en-US/library/windows/apps/xaml/hh700363">MSDN Quickstart: Temporary application data</a></p>
+<p><a href="http://msdn.microsoft.com/en-US/library/windows/apps/hh770544">MSDN: Guidelines for app settings</a></p>
+<p><a href="http://msdn.microsoft.com/en-US/library/windows/apps/xaml/Hh872190(v=win.10">MSDN Quickstart: Add app settings</a>)</p>
+<p><a href="http://blogs.msdn.com/b/going_metro/archive/2012/04/22/integrating-with-windows-8-settings-charm.aspx">Going Metro: Integrating with Windows 8 Settings Charm</a></p>
+<p>Create the User Interface (21%)</p>
+<p>Create layout aware apps to handle view states.</p>
+<p>This objective may include but is not limited to: handle view state events from ViewStateManager; choose between style patterns for the different view states; set app orientation in the manifest</p>
+<p>Implement layout controls.</p>
+<p>This objective may include but is not limited to: implement the Grid control to structure your layout; set the number of rows/columns and size; enable zoom and scroll capabilities in layout controls; manage text flow and presentation</p>
+<p>Design and implement the app bar.</p>
+<p>This objective may include but is not limited to: determine what to put on the app bar based on app requirements; style and position app bar items; design the placement of controls on the app bar; handle AppBar events</p>
+<p>Design and implement data presentation.</p>
+<p>This objective may include but is not limited to: choose and implement data controls to meet app requirements (e.g., ListView, GridView, and FlipView); create data templates to meet app requirements</p>
+<p>Create and manage XAML styles and templates.</p>
+<p>This objective may include but is not limited to: implement and extend styles and templates; implement gradients; modify styles based on event and property triggers; create shared resources and themes</p>
+<p>Program the User Interaction (21%)</p>
+<p>Create and manage tiles.</p>
+<p>This objective may include but is not limited to: create and update tiles and tile contents; create and update badges (TileUpdateManager class); respond to notification requests; choose an appropriate tile update schedule based on app requirements</p>
+<p><a href="http://msdn.microsoft.com/en-US/library/windows/apps/xaml/Hh868259(v=win.10">MSDN: Working with tiles, badges, and toast notifications</a>)</p>
+<p><a href="http://msdn.microsoft.com/en-US/library/windows/apps/xaml/Hh868260(v=win.10">MSDN: Creating tiles</a>)</p>
+<p><a href="http://msdn.microsoft.com/en-us/library/windows/apps/hh779719.aspx">MSDN: Badge overview</a></p>
+<p><a href="http://msdn.microsoft.com/en-us/library/windows/apps/hh761458.aspx">MSDN: The badge image catalog</a></p>
+<p><a href="http://msdn.microsoft.com/en-us/library/windows/apps/xaml/Hh868225(v=win.10">MSDN Quickstart: Sending a badge update</a>.aspx)</p>
+<p><a href="http://msdn.microsoft.com/en-us/library/windows/apps/hh465403.aspx">MSDN: Guidelines and checklist for tiles and badges</a></p>
+<p><a href="http://msdn.microsoft.com/en-us/library/windows/apps/hh761459.aspx">MSDN: Guidelines and checklist for badges</a></p>
+<p><a href="http://msdn.microsoft.com/en-us/library/windows/apps/hh779721.aspx">MSDN: Choosing a notification delivery method</a></p>
+<p><a href="http://msdn.microsoft.com/en-us/library/windows/apps/jj150587.aspx">MSDN: Periodic notification overview</a></p>
+<p><a href="http://msdn.microsoft.com/en-us/library/windows/apps/xaml/Hh868228(v=win.10">MSDN: How to set up periodic notifications for tiles</a>.aspx)</p>
+<p><a href="http://msdn.microsoft.com/en-us/library/windows/apps/hh761461.aspx">MSDN: Guidelines and checklist for periodic notifications</a></p>
+<p><a href="http://msdn.microsoft.com/en-us/library/windows/apps/hh913756.aspx">MSDN: Push notification overview</a></p>
+<p><a href="http://mobile.dzone.com/articles/winrt-example-using-periodic">Mikael Koskinen: WinRT - Example of Using Periodic Notifications for Live Tiles</a></p>
+<p>Notify users by using toast.</p>
+<p>This objective may include but is not limited to: enable an app for toast notifications; populate toast notifications with images and text using the ToastUpdateManager class; play sounds with toast notifications; respond to toast events; control toast duration</p>
+<p><a href="http://msdn.microsoft.com/en-us/library/windows/apps/hh779727.aspx">MSDN: Toast notification overview</a></p>
+<p><a href="http://msdn.microsoft.com/en-us/library/windows/apps/xaml/Hh868218(v=win.10">MSDN: How to opt in for toast notifications</a>.aspx)</p>
+<p><a href="http://msdn.microsoft.com/en-us/library/windows/apps/xaml/Hh868254(v=win.10">MSDN Quickstart: Sending a toast notification</a>.aspx)</p>
+<p><a href="http://msdn.microsoft.com/en-us/library/windows/apps/hh465391.aspx">MSDN: Guidelines and checklist for toast notifications</a></p>
+<p><a href="http://msdn.microsoft.com/en-us/library/windows/apps/xaml/Hh868224(v=win.10">MSDN: How to schedule a toast notification</a>.aspx)</p>
+<p><a href="http://msdn.microsoft.com/en-us/library/windows/apps/hh761494.aspx">MSDN: The toast template catalog</a></p>
+<p><a href="http://visualstudiomagazine.com/articles/2012/03/25/using-push-notifications-in-windows-8.aspx">Eric Vogel: Using Push Notifications in Windows 8</a></p>
+<p>Manage input devices.</p>
+<p>This objective may include but is not limited to: capture Gesture library events; create custom gesture recognizers; listen to mouse events or touch gestures; manage Stylus input and inking</p>
+<p>Design and implement navigation in an app.</p>
+<p>This objective may include but is not limited to: handle navigation events, check navigation properties, and call navigation functions by using the Navigation framework; design navigation to meet app requirements; Semantic Zoom</p>
+<p>Manage Security and Data (20%)</p>
+<p>Choose an appropriate data access strategy.</p>
+<p>This objective may include but is not limited to: choose the appropriate data access strategy (file based, web service, remote storage, including Windows Azure storage) based on requirements</p>
+<p>Retrieve data remotely.</p>
+<p>This objective may include but is not limited to: use HttpClient to retrieve web services; set the appropriate HTTP verb for REST; consume SOAP/WCF services; use WebSockets for bi-directional communication; handle the progress of data requests</p>
+<p>Implement data binding.</p>
+<p>This objective may include but is not limited to: choose and implement data-bound controls; bind collections to items controls; implement the IValueConverter interface; create and set dependency properties; validate user input; enable filtering, grouping, and sorting data in the user interface</p>
+<p>Manage Windows Authentication.</p>
+<p>This objective may include but is not limited to: retrieve a user&#39;s roles or claims; store and retrieve credentials by using the PasswordVault class; implement the CredentialPicker class</p>
+<p>Manage Web Authentication.</p>
+<p>This objective may include but is not limited to: use the Windows.Security.Authentication.Web namespace; set up oAuth2 for authentication; implement the CredentialPicker class; set up single sign-on (SSO); implement credential roaming; implement the WebAuthenticationBroker class</p>
+<p><a href="http://msdn.microsoft.com/en-us/library/windows/apps/xaml/Hh465283(v=win.10">MSDN: Setting up single sign-on</a>.aspx)</p>
+<p><a href="http://msdn.microsoft.com/en-us/library/windows/apps/xaml/hh465275.aspx">MSDN: How to set up single sign-on for developers</a></p>
+<p><a href="http://msdn.microsoft.com/en-us/library/windows/apps/xaml/hh465279.aspx">MSDN: How to set up single sign-on for online providers</a></p>
+<p><a href="http://msdn.microsoft.com/en-us/library/windows/apps/xaml/jj203553.aspx">MSDN: Guidelines for single sign-on and connected accounts</a></p>
+<p><a href="http://msdn.microsoft.com/en-us/library/windows/apps/windows.security.authentication.web">MSDN: Windows.Security.Authentication.Web namespace</a></p>
+<p><a href="http://msdn.microsoft.com/en-us/library/windows/apps/BR227025">MSDN: WebAuthenticationBroker class</a></p>
+<p><a href="http://www.sempf.net/post/How-to-login-to-Facebook-from-Windows-8-Metro-using-HTML-5.aspx">Bill Sempf&#39;s Blog: How to login to Facebook from Windows 8 Metro (in HTML5)</a></p>
+<p><a href="http://worldwidecode.wordpress.com/2011/10/01/windows-8-web-authentication-in-metro-apps/">World Wide Code - Shubhan Chemburkar&#39;s Blog: Windows 8 - Web authentication in Metro apps (in HTML5)</a></p>
+</div><div></div><div class="addthis_native_toolbox"></div><div id="disqus"><div id="disqus_thread"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments.</a></noscript></div>
+<script type="text/javascript">
+    var disqus_shortname = 'giorgiolasala';
+    var disqus_url = 'http://www.giorgiolasala.it/2012/08/study-notes-for-70-484-exam-xaml/';
+    var disqus_identifier = disqus_url;
+    var disqus_title = 'Study Notes for 70-484 Exam: Essentials of Developing Windows Metro style Apps using C#';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script></div></article></div><footer id="footer" class="text-right"><div id="copyright"><span>Giorgio Lasala Blog © 2014. All Rights Reserved. Powered by </span><a href="https://docpad.org" target="_blank">DocPad</a></div></footer></div><script defer="defer"  src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script><script defer="defer"  src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><script defer="defer"  src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script><script defer="defer"  src="/scripts/jquery.cssemoticons.min.js"></script><script defer="defer"  src="/scripts/jquery.tagcanvas.js"></script><script defer="defer"  src="/scripts/app.js"></script><script type="text/javascript" >
+	/*WebFontConfig = {
+		google: {
+		  families: [
+			'Nosifer::latin'
+		  ]
+		},
+	active: function() {
+	  alert('aaaa');
+	}
+  };*/
+</script>
+
+<script type="text/javascript">
+    window.appInsights={queue:[],applicationInsightsId:null,accountId:null,appUserId:null,configUrl:null,start:function(n){function u(n){t[n]=function(){var i=arguments;t.queue.push(function(){t[n].apply(t,i)})}}function f(n,t){if(n){var u=r.createElement(i);u.type="text/javascript";u.src=n;u.async=!0;u.onload=t;u.onerror=t;r.getElementsByTagName(i)[0].parentNode.appendChild(u)}else t()}var r=document,t=this,i;t.applicationInsightsId=n;u("logEvent");u("logPageView");i="script";f(t.configUrl,function(){f("//az416426.vo.msecnd.net/scripts/v/ai.0.7.js")});t.start=function(){}}};
+    
+    appInsights.start("b381f6b5-ab80-4f42-89be-e2f8995b2dd2");
+    appInsights.logPageView();
+</script>
+
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-54a5802d1314629a" async="async"></script>
+</body></html>

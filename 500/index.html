@@ -1,0 +1,8 @@
+div class: "hero-unit", ->
+  h1 "500 Internal Server Error"
+  p ->
+    text "Ooops! Qualcosa non funziona!! "
+    #code @req.url
+    text "Ecco i dettagli:"
+  p ->
+    pre @err.message or @err.stack
